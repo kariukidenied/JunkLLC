@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ClientBody } from "./ClientBody";
 
 export const metadata: Metadata = {
   title: "Junk Removal Services in Worcester | Two Men and a Junk Truck",
@@ -14,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClientBody>{children}</ClientBody>
+      <body className="antialiased" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
