@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cyan-bg: #93d9ef;
+  --dark-bg: #222426;
+  --blue-accent: #0072bb;
+  --dark-blue: #0848b5;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-pattern {
+  background-color: #93d9ef;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2382c9df' fill-opacity='0.4'%3E%3C!-- Chair --%3E%3Crect x='20' y='80' width='30' height='5' rx='2'/%3E%3Crect x='22' y='85' width='3' height='25' rx='1'/%3E%3Crect x='45' y='85' width='3' height='25' rx='1'/%3E%3Crect x='20' y='60' width='30' height='20' rx='2'/%3E%3C!-- Table --%3E%3Cellipse cx='120' cy='75' rx='25' ry='5'/%3E%3Crect x='118' y='80' width='4' height='30' rx='1'/%3E%3C!-- Lamp --%3E%3Crect x='170' y='90' width='15' height='3' rx='1'/%3E%3Crect x='175' y='60' width='5' height='30'/%3E%3Cpath d='M168 60 L187 60 L182 45 L173 45 Z'/%3E%3C!-- Box --%3E%3Crect x='60' y='140' width='25' height='20' rx='2'/%3E%3Crect x='58' y='135' width='29' height='5' rx='1'/%3E%3C!-- Sofa --%3E%3Crect x='120' y='145' width='40' height='15' rx='3'/%3E%3Crect x='115' y='140' width='10' height='25' rx='2'/%3E%3Crect x='155' y='140' width='10' height='25' rx='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold uppercase tracking-tight;
+}
+
+.btn-primary {
+  @apply bg-[#0072bb] hover:bg-[#005a94] text-white font-semibold py-3 px-8 rounded-md transition-colors;
+}
+
+.btn-outline {
+  @apply border-2 border-[#222426] text-[#222426] font-semibold py-3 px-8 rounded-md hover:bg-[#222426] hover:text-white transition-colors;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #93d9ef;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0072bb;
+}
